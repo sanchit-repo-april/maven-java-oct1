@@ -103,7 +103,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>DigiEras Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.93.169.17:8081/repository/flipkart-snapshot/</url>
+	      <url>http://18.208.247.6:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
