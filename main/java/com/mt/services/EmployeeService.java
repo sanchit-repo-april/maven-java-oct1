@@ -22,7 +22,7 @@ public class EmployeeService {
 			throws JSONException {
 
 		JSONObject js = new JSONObject();
-		js.put("Name", "DigiEras");
+		js.put("Name", "DigiEra");
 		js.put("Calling Name", "Dii");
 		js.put("DOB", "08-Nov-2017);
 		js.put("Hobbies", "Reading Technical Blogs,Teaching, Helping to Poor People..");
