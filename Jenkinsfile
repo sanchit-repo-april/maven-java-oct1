@@ -22,11 +22,7 @@ node{
     stage('deploying to tomcat'){
         sshagent(['tomcatsshkey']) {
             sh """
-            scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
-        target/maven-web-application.war ec2-user@54.145.19.193:/tmp/
-
-        ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ec2-user@54.145.19.193 \
-        'sudo mv /tmp/maven-web-application.war /opt/tomcat/webapps/'
+            scp target/maven-web-application.war ec2-user@54.145.19.193:/opt/tomcat/webapps
             """
 
             //sh "scp target/maven-web-application.war ec2-user@54.145.19.193:/opt/tomcat/webapps"
