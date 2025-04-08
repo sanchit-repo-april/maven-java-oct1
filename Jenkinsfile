@@ -6,6 +6,7 @@ pipeline{
     }
     options {
                 buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '4')
+                timestamps
              }
     stages{
         stage('cloning'){
